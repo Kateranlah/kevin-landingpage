@@ -13,3 +13,7 @@ p{
 a{
     font-size: 2rem;
 }
+
+.d-none{
+    display: none;
+}
