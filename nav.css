@@ -1,0 +1,44 @@
+nav ul {
+  position: relative;
+  animation-name: example;
+  animation-duration: 8s ;
+}
+
+nav ul li{
+    position: relative;
+    top: 0;
+    animation-name: schrinkGrow;
+    animation-duration: 8s ;
+  }
+
+@keyframes example {
+  0% {
+    background-color: red;
+  }
+  /*25% {
+  }
+  50% {
+  }
+  75% {
+  }*/
+  100% {
+    background-color: green;
+    list-style: none
+  }
+}
+
+
+@keyframes shrinkGrow {
+    0% {
+    }
+    /*25% {
+    }
+    50% {
+    }
+    75% {
+    }*/
+    100% {
+      position: relative;
+      top: 0;
+    }
+  }

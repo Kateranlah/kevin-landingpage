@@ -1,0 +1,57 @@
+$base-time: 0.75s;
+
+nav ul{
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+
+  :where(li){
+    position: absolute;
+
+    :where(&):nth-child(2){
+      margin-top: 20px;
+    }
+    :where(&):nth-child(3){
+      margin-top: 40px;
+    }
+  }
+    
+
+}
+
+.collapse-nav{
+  animation-name: collapse;
+  animation-duration: 1s; 
+  animation-fill-mode: forwards;
+}
+
+
+.dot{
+height: 0.3rem;
+width: 0.3rem;
+border-radius: 100%;
+background-color: rgb(0, 0, 0);
+position: relative;
+transform: translate(-270%, 270%);
+}
+
+.dot-delete{
+    animation-name: fade;
+    animation-fill-mode: forwards;
+    animation-duration: $base-time;
+    height: 0.3rem;
+    width: 0.3rem;
+    border-radius: 100%;
+}
+
+  @keyframes fade {
+    0%   {background-color: rgb(0, 0, 0);}
+    25%  {background-color: rgba(0, 0, 0, 0.75);}
+    50%  {background-color: rgb(0, 0, 0, 0.5);}
+    75%  {background-color: rgb(0, 0, 0, 0.25);}
+    100% {background-color: rgb(0, 0, 0, 0.0);}
+  }
+
+  @keyframes collapse {
+    100% {margin-top: 0px;}
+  }
