@@ -1,5 +1,13 @@
 <div class="container">
+    <div>
+        <h2>Get in touch</h2>
+        <p>Contact me through this form, I am interested in hearing you, knowing your ideas and contribuiting to your projects with my work.</p>
+    </div>
+
+
     <form (submit)="sendMail()" #myForm>
+
+        <div class="details">
         <mat-form-field appearance="outline">
             <mat-label>Enter your name</mat-label>
             <input matInput [formControl]="name" type="text" placeholder="Your name" name="name" #nameField>
@@ -13,7 +21,7 @@
             <mat-icon matSuffix></mat-icon>
             <mat-error *ngIf="email.invalid">{{getErrorMessageEmail()}}</mat-error>
         </mat-form-field>
-
+        </div>
 
         <mat-form-field appearance="outline">
             <mat-label>Enter your message</mat-label>
