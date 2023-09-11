@@ -5,17 +5,27 @@
   bottom: 0;
   right: 10%;
   background-color: white;
+
+    &> div{
+        padding-inline: 3rem;
+    }
 }
+
+
 
 form{
     display: flex;
     flex-direction: column;
+    padding-inline: 3rem;
+
+    .details{
+        display: flex;
+        justify-content: space-between;
+    }
 }
 
 
-form {
-    
-  }
+
 
 textarea,
 input {
@@ -23,7 +33,6 @@ input {
   flex-direction: row;
   align-items: center;
   z-index: 3;
-
   &:hover,
   &:focus {
     border: 3px solid #5988ff;
@@ -38,7 +47,7 @@ input {
 
 ::ng-deep .mdc-text-field__input {
   position: relative;
-  z-index: 99;
+  z-index: 9999;
 }
 
 textarea {
@@ -46,6 +55,7 @@ textarea {
   height: 30%;
 }
 button {
+    padding-inline: 32px;
     &:hover{
  
     }
