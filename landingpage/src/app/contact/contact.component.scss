@@ -1,0 +1,54 @@
+.container {
+  width: 40vw;
+  height: 80vh;
+  position: absolute;
+  bottom: 0;
+  right: 10%;
+  background-color: white;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+}
+
+
+form {
+    
+  }
+
+textarea,
+input {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  z-index: 3;
+
+  &:hover,
+  &:focus {
+    border: 3px solid #5988ff;
+  }
+}
+
+::ng-deep .mdc-text-field--outlined .mdc-notched-outline {
+  background: #ffffff !important;
+  z-index: 3;
+  width: unset;
+}
+
+::ng-deep .mdc-text-field__input {
+  position: relative;
+  z-index: 99;
+}
+
+textarea {
+  isolation: isolate;
+  height: 30%;
+}
+button {
+    &:hover{
+ 
+    }
+}
+
+ 
