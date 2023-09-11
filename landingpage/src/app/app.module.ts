@@ -8,6 +8,10 @@ import { MainComponent } from './main/main.component';
 import { FooterComponent } from './footer/footer.component';
 import { CharacterComponent } from './character/character.component';
 import { LandingComponent } from './landing/landing.component';
+import { ContactComponent } from './contact/contact.component';
+
+
+
 
 @NgModule({
   declarations: [
@@ -16,11 +20,12 @@ import { LandingComponent } from './landing/landing.component';
     MainComponent,
     FooterComponent,
     CharacterComponent,
-    LandingComponent
+    LandingComponent,
+    ContactComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
