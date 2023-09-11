@@ -1,57 +1,83 @@
-$base-time: 0.75s;
-
-nav ul{
+nav{
   display: flex;
-  flex-direction: column;
-  list-style: none;
+  width: 100%;
+  background-color: rgb(0, 0, 0);
+  align-items: center;
+  justify-content: space-between;
+  height: 10%;
 
-  :where(li){
-    position: absolute;
+  span{
+    color: white;
+    font-size: 1.5rem;
+    margin-left: 10%;
+  }
+  
+  ul{
+    display: flex;
+    justify-content: space-between;
+    margin-right: 10%;
+    width: 30%;
 
-    :where(&):nth-child(2){
-      margin-top: 20px;
+    li{
+      list-style: none;
+      
+      a{
+        text-decoration: none;
+        color: white;
+        font-size: 1.5rem;
+
+        
+        }
+      }
     }
-    :where(&):nth-child(3){
-      margin-top: 40px;
-    }
-  }
-    
-
-}
-
-.collapse-nav{
-  animation-name: collapse;
-  animation-duration: 1s; 
-  animation-fill-mode: forwards;
-}
-
-
-.dot{
-height: 0.3rem;
-width: 0.3rem;
-border-radius: 100%;
-background-color: rgb(0, 0, 0);
-position: relative;
-transform: translate(-270%, 270%);
-}
-
-.dot-delete{
-    animation-name: fade;
-    animation-fill-mode: forwards;
-    animation-duration: $base-time;
-    height: 0.3rem;
-    width: 0.3rem;
-    border-radius: 100%;
-}
-
-  @keyframes fade {
-    0%   {background-color: rgb(0, 0, 0);}
-    25%  {background-color: rgba(0, 0, 0, 0.75);}
-    50%  {background-color: rgb(0, 0, 0, 0.5);}
-    75%  {background-color: rgb(0, 0, 0, 0.25);}
-    100% {background-color: rgb(0, 0, 0, 0.0);}
   }
 
-  @keyframes collapse {
-    100% {margin-top: 0px;}
-  }
+  
+
+
+
+
+
+
+
+
+
+
+
+
+// Thanks to Abdullah Al Amin
+// Find him on codepen under billionbd
+.effect a::before,
+.effect a::after {
+  display: inline-block;
+  opacity: 0;
+  -webkit-transition: -webkit-transform 0.3s, opacity 0.2s;
+  -moz-transition: -moz-transform 0.3s, opacity 0.2s;
+  transition: transform 0.3s, opacity 0.2s;
+}
+
+.effect a::before {
+  margin-right: 10px;
+  content: '|';
+  -webkit-transform: translateX(20px);
+  -moz-transform: translateX(20px);
+  transform: translateX(20px);
+}
+
+.effect a::after {
+  margin-left: 10px;
+  content: '|';
+  -webkit-transform: translateX(-20px);
+  -moz-transform: translateX(-20px);
+  transform: translateX(-20px);
+}
+
+.effect a:hover::before,
+.effect a:hover::after,
+.effect a:focus::before,
+.effect a:focus::after {
+  opacity: 1;
+  -webkit-transform: translateX(0px);
+  -moz-transform: translateX(0px);
+  transform: translateX(0px);
+}
