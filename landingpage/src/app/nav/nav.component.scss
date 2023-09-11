@@ -1,4 +1,4 @@
-nav{
+nav {
   display: flex;
   width: 100%;
   background-color: rgb(0, 0, 0);
@@ -6,44 +6,29 @@ nav{
   justify-content: space-between;
   height: 10%;
 
-   span{
-      color: white;
-      font-size: 1.5rem;
-      margin-left: 10%;
-    }
-  
-  ul{
+  span {
+    color: white;
+    font-size: 1.5rem;
+    margin-left: 10%;
+  }
+
+  ul {
     display: flex;
     justify-content: space-between;
     margin-right: 10%;
     width: 40%;
 
-    li{
+    li {
       list-style: none;
-      
-      a{
+
+      a {
         text-decoration: none;
         color: white;
         font-size: 1.5rem;
-
-        
-        }
       }
     }
   }
-
-  
-
-
-
-
-
-
-
-
-
-
-
+}
 
 // Thanks to Abdullah Al Amin
 // Find him on codepen under billionbd
@@ -58,7 +43,7 @@ nav{
 
 .effect a::before {
   margin-right: 10px;
-  content: '|';
+  content: "|";
   -webkit-transform: translateX(20px);
   -moz-transform: translateX(20px);
   transform: translateX(20px);
@@ -66,7 +51,7 @@ nav{
 
 .effect a::after {
   margin-left: 10px;
-  content: '|';
+  content: "|";
   -webkit-transform: translateX(-20px);
   -moz-transform: translateX(-20px);
   transform: translateX(-20px);
