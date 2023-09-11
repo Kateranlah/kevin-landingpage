@@ -10,7 +10,6 @@ import { CharacterComponent } from './character/character.component';
 import { LandingComponent } from './landing/landing.component';
 import { ContactComponent } from './contact/contact.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { MatInputModule } from '@angular/material/input';
 
 
 
@@ -32,8 +31,6 @@ import { MatInputModule } from '@angular/material/input';
     MatFormFieldModule,
     BrowserAnimationsModule,
     ReactiveFormsModule,
-    MatFormFieldModule,
-    MatInputModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
